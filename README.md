@@ -32,6 +32,7 @@ that enables to interact with the mqtt protocol.
 The sample app implements a MQTT Server that can accept and handle mqtt connections from multiple clients, an MQTT Client that can publish and receive messages registered on given topic, and a simple User Interface (UI) to display the received messages and to write new messages to be published.
 
 Screenshot of simple UI for sending and visualizing messages:
+
 <img src="https://www.dpdl.io/images/platform/examples/dpdlmqttapp/DpdlMQTTApp_screen.png" width="55%" height="55%">
 
 As Dpd allows the embedding of other programming languages, this Dpdl sample app can make use of the 'Mongoose' C library to
