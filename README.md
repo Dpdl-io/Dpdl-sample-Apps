@@ -33,7 +33,7 @@ The sample app implements a MQTT Server that can accept and handle mqtt connecti
 
 Screenshot of simple UI for sending and visualizing messages:
 
-<img src="https://www.dpdl.io/images/platform/examples/dpdlmqttapp/DpdlMQTTApp_screen.png" width="65%" height="65%">
+<img src="https://www.dpdl.io/images/platform/examples/dpdlmqttapp/DpdlMQTTApp_screen.png" width="60%" height="60%">
 
 As Dpd allows the embedding of other programming languages, this Dpdl sample app can make use of the 'Mongoose' C library to
 implement the mqtt protocol layer components (server/client). The whole C library is compiled at runtime and linked with the ebmedded
