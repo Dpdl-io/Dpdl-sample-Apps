@@ -11,25 +11,27 @@ This repository contains some sample Apps implemented with Dpdl (Dynamic Packet 
 
 ## Dpdl sample Apps:
 
-**1) Embedded MQTT server and MQTT client with simple UI**
+## 1) DpdlMQTTApp - An embedded MQTT server and MQTT client with simple UI**
 
-**2) 3D visualization and animation of chemical molecules**
+## 2) 3D visualization and animation of chemical molecules**
 
 
-### 1) Embedded MQTT server and MQTT client with simple UI
+### 1) DpdlMQTTApp - An embedded MQTT server and MQTT client with simple UI
 
-Dpdl source code in folder:
+The Dpdl source code can be found in this folder:
 ./app/dpdlmqttapp/
 
 
 #### Description
 
-The Dpdl app '**dpdlmqttapp**' serves as a demonstrator for some of the features provided by Dpdl.
+The Dpdl app '**DpdlMQTTApp**' serves as a demonstrator for some of the features provided by Dpdl.
 
-This is a full working prototype of a of an embedded MQTT server, an MQTT client implementation with a simple User Interface (UI)
+This is a full working prototype of an embedded MQTT server and a MQTT client implementation with a simple User Interface (UI)
 that enables to interact with the mqtt protocol.
 
-The sample app implements a MQTT Server that can accept and handle mqtt connections from multiple clients, an MQTT Client that can publish and receive messages registered on given topic, and a simple User Interface (UI) to display the received messages and to write new messages to be published.
+The sample app implements a full featured MQTT Server that accepts and handles mqtt connections from multiple clients at the following address: mqtt://127.0.0.1:1883
+An embedded MQTT Client is implemented to publish and receive messages registered on given topic.
+A simple User Interface (UI) allows to display the received messages and to write new messages to be published via the MQTT server.
 
 Screenshot of simple UI for sending and visualizing messages:
 
