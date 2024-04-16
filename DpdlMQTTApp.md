@@ -47,7 +47,7 @@ The components related to the Mqtt protocol are implemented using the Mongoose e
 
 The main application entry point is the Dpdl module [dpdlmqttapp/start.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/dpdlmqttapp/start.h) which performs the following:
 
-- creates a UI using the Java JRE swing libraries via the include code [dpdlmqttapp/dpdlMqttGUI.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/dpdlmqttapp/dpdlMqttGUI.h)
+- creates a UI using the Java JRE swing libraries via the include code [dpdlmqttapp/dpdlMqttUI.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/dpdlmqttapp/dpdlMqttUI.h)
 - creates a dedicated Dpdl thread instance to run the MQTT server code [dpdlmqttapp/dpdlMqttServer.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/dpdlmqttapp/dpdlMqttServer.h)
 - creates a dedicated Dpdl thread isntance to run the MQTT client code [dpdlmqttapp/dpdlMqttClient.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/dpdlmqttapp/dpdlMqttClient.h)
   The client connection is put on the dpdl stack, so that it can be reused in the 'start.h' module. Messages received are also put on the dpdl stack.
