@@ -8,15 +8,18 @@
 
 This repository contains some sample Apps implemented with Dpdl (Dynamic Packet Definition Language)
 
-The purpose 
+The purpose of these applications is to show the features and language constructs of Dpdl
 
 
 ## Dpdl sample Apps:
 
-## 1) DpdlMQTTApp - An embedded MQTT server and MQTT client with simple UI
+## DpdlMQTTApp - An embedded MQTT server and MQTT client with simple UI
 
-## 2) 3D visualization and animation of chemical molecules
+[DpdlMQTTApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlMQTTApp.md)
 
+## 3D visualization and animation of chemical molecules
+
+provided soon
 
 
 
