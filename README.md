@@ -17,6 +17,8 @@ The purpose of these applications is to show the features and language construct
 
 [DpdlMQTTApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlMQTTApp.md)
 
+<img src="https://www.dpdl.io/images/platform/examples/dpdlmqttapp/DpdlMQTTApp_screen.png" width="55%" height="55%">
+
 ## 3D visualization and animation of chemical molecules
 
 [Dpdl3DMolecule](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/Dpdl3DMolecule.md)
