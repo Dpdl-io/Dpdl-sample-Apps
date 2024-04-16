@@ -19,7 +19,9 @@ The purpose of these applications is to show the features and language construct
 
 ## 3D visualization and animation of chemical molecules
 
-provided soon
+[Dpdl3DMolecule](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/Dpdl3DMolecule.md)
+
+<img src="https://www.dpdl.io/images/platform/examples/Dpdl_3D_Example2_with_JavaFX.png" width="65%" height="65%">
 
 
 
