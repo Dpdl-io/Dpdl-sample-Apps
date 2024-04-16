@@ -1,4 +1,10 @@
+# DpdlMQTTApp
 
+![Dpdl](https://www.dpdl.io/images/dpdl-io.png)
+
+				www.dpdl.io
+
+    
 ##  DpdlMQTTApp - An embedded MQTT server and MQTT client with simple UI
 
 The Dpdl source code can be found in this folder:
