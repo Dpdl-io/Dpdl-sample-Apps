@@ -8,7 +8,7 @@
 
 This repository contains some sample apps implemented with Dpdl (Dynamic Packet Definition Language)
 
-The purpose of these applications is to show the features and language constructs of Dpdl.
+The purpose of these small applications is serve as demonstrators to show the features and language constructs of Dpdl.
 
 Therefore the apps listed here are considered to be small prototype applications written with Dpdl.
 
