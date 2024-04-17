@@ -15,12 +15,12 @@ The Dpdl source code can be found in this folder:
 
 The Dpdl app '**DpdlMQTTApp**' serves as a demonstrator for some of the features provided by Dpdl.
 
-This is a full working prototype of an embedded MQTT server and a MQTT client implementation with a simple User Interface (UI)
-that enables to interact with the mqtt protocol.
+This is a full working prototype of an embedded MQTT server and an embedded MQTT client implementation with a simple User Interface (UI)
+that enables to interact with the mqtt protocol thanks to the Mongoose C library.
 
-The sample app implements a full featured MQTT Server that accepts and handles mqtt connections from multiple clients at the following address: mqtt://127.0.0.1:1883
+The sample app implements a full featured MQTT Server that accepts and handles mqtt connections from multiple clients at the following address: **mqtt://127.0.0.1:1883**
 
-An embedded MQTT Client is implemented to publish and receive messages registered on given topic.
+An embedded MQTT Client is implemented to publish and receive messages via mqtt registered on given topic.
 
 A simple User Interface (UI) allows to display the received messages and to write new messages to be published via the MQTT server.
 
@@ -28,9 +28,9 @@ Screenshot of simple UI for sending and visualizing messages:
 
 <img src="https://www.dpdl.io/images/platform/examples/dpdlmqttapp/DpdlMQTTApp_screen.png" width="60%" height="60%">
 
-As Dpd allows the embedding of other programming languages, this Dpdl sample app can make use of the 'Mongoose' C library to
+As Dpd allows the embedding of other programming languages, this Dpdl sample app can make use of the powerful 'Mongoose' C library to
 implement the mqtt protocol layer components (server/client). The whole C library is compiled at runtime and linked with the ebmedded
-C code which is than dynamically executed at runtime.
+Dpdl C code which is than dynamically executed at runtime.
 
 
 ### Modules
