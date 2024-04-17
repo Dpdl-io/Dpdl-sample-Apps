@@ -55,6 +55,7 @@ The main application entry point is the Dpdl module [dpdlmqttapp/start.h](https:
 a queue of messages via Mqtt and retrieves and lists the messages received.
 
 
+NOTE: This Dpdl app requires a full registered version of 'DpdlEngine lite' to run successfully 
 
 
 
