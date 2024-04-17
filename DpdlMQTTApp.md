@@ -54,6 +54,12 @@ The main application entry point is the Dpdl module [dpdlmqttapp/start.h](https:
 - creates a thread which calls the funciton 'clientMqttPublish(..)' every 5 seconds. The function embeds the C code for publishing
 a queue of messages via Mqtt and retrieves and lists the messages received.
 
+By using a third party mqtt client (eg. Mosquitto), you can register to the message topic with the following command:
+
+```
+mosquitto_sub -v -h 127.0.0.1 -p 1883 -t 'a/#' -t 'dpdl/+/test'
+```
+
 
 NOTE: This Dpdl app requires a full registered version of 'DpdlEngine lite' to run successfully 
 
