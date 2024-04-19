@@ -10,7 +10,7 @@
 
 The application has been ported to Dpdl from the JavaFX examples.
 
-The Dpdl app uses the JavaFX library to create and animate a 3D visualization of a hydrogen chemical molecule.
+This Dpdl application makes use of the JavaFX library to create and animate a 3D visualization of a hydrogen chemical molecule.
 
 The 3D model can be rotated freely with the mouse pointer
 
