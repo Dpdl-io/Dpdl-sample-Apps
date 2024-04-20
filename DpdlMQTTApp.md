@@ -15,7 +15,7 @@ The Dpdl source code can be found in this folder:
 
 The Dpdl app '**DpdlMQTTApp**' serves as a demonstrator for some of the features provided by Dpdl.
 
-This is a full working prototype of an embedded **MQTT server** and an embedded **MQTT client** implementation with a simple **User Interface (UI)**
+This is a full working prototype of an <ins>embedded **MQTT server**</ins> and an <ins>embedded **MQTT client**</ins> implementation with a simple <ins>**User Interface (UI)**</ins>
 that enables to interact with the mqtt protocol thanks to the Mongoose C library.
 
 The sample app implements a full featured MQTT Server that accepts and handles mqtt connections from multiple clients at the following address: **mqtt://127.0.0.1:1883**
