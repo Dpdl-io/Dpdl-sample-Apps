@@ -6,6 +6,7 @@
 #
 # Author: A.Costa
 # e-mail: ac@dpdl.io
+# www.dpdl.io
 #
 #
 import('thread')
