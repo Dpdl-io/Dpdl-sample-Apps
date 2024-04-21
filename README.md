@@ -6,7 +6,7 @@
 				
 
 
-This repository contains some sample applications implemented with **Dpdl (Dynamic Packet Definition Language)**
+This repository contains some sample applications implemented with **<ins>Dpdl</ins> (Dynamic Packet Definition Language)**
 
 The purpose of these small applications is to serve as demonstrators to show some features and language constructs of Dpdl.
 
