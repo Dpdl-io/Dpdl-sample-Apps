@@ -26,7 +26,7 @@ As example web-site a dashboard (provided by Mongoose example) for controlling I
 
 <img src="https://www.dpdl.io/images/platform/examples/dpdlwebsbrowseapp/DpdlWebsBrowseApp_screen1.png" width="60%" height="60%">
 
-**Dashboard IoT device management:**
+**Dashboard IoT device management:** (from Mongoose example)
 
 <img src="https://www.dpdl.io/images/platform/examples/dpdlwebsbrowseapp/DpdlWebsBrowseApp_screen2.png" width="60%" height="60%">
 
