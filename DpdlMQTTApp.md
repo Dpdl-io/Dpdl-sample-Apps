@@ -30,7 +30,7 @@ Screenshot of simple UI for sending and visualizing messages:
 
 As Dpd allows the embedding of other programming languages, this Dpdl sample app can make use of the powerful 'Mongoose' C library to
 implement the mqtt protocol layer components (server/client). The whole C library is compiled at runtime and linked with the ebmedded
-Dpdl C code which is than dynamically executed at runtime.
+Dpdl C code which is than dynamically executed at runtime. Hence this Dpdl code is portable to all platforms without the need to compile the library.
 
 
 ### Modules
