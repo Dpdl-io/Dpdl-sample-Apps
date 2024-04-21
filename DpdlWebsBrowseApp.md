@@ -9,15 +9,16 @@
 
 ## DpdlWebBrowseApp - an embedded Web-server with a web-browser UI
 
-Dpdl source code folder:
+Application Dpdl source code:
 [app/dpdlwebsbrowseapp](https://github.com/Dpdl-io/Dpdl-sample-Apps/tree/main/app/dpdlwebsbrowseapp)
 
-This Dpdl applications implements a fully compliant http embedded web-server which is capable of serving web content from a defined local directory via HTTP protocol. 
+This Dpdl applications implements a fully compliant http <ins>embedded Web-Server</ins> which is capable of serving web content from a defined local directory via HTTP protocol.
 
-Due to the fact that the mongoose C network library is compiled in memory at runtime by the Dpdl runtime (very fast compile time, 20 ms to compile and start the server),
-the application is completely cross platform.
+The applications provides also a <ins>Browser like User Interface (UI)</ins> to navigate the hosted web-sites. The browser supports most content creation technologies available in modern browsers (Html5, css, Javascript).
 
-The applications provides also a browser like User Interface (UI) to navigate the hosted web-sites. The browser supports most content creation technologies available in modern browsers (Html5, css, Javascript).
+The applications makes use of the Mongoose C network library and of the JavaFX libraries.
+
+Due to the fact that the mongoose C network library is compiled in memory at runtime by the Dpdl runtime (very fast compile time, 20 ms to compile and start the server), the application is completely cross platform.
 
 
 As example web-site a dashboard (from Mongoose) for controlling IoT devices via MQTT protocol is presented.
