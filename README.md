@@ -10,7 +10,9 @@ This repository contains some sample applications implemented with:
 
 **<ins>Dpdl</ins> (Dynamic Packet Definition Language)**
 
-The purpose of these small applications is to serve as demonstrators to show some features and language constructs of Dpdl.
+https://github.com/Dpdl-io/DpdlEngine
+
+The purpose of the small applications listed here is to serve as demonstrators to show some features and language constructs of Dpdl.
 
 Therefore the apps listed here are considered to be small prototype applications written with Dpdl.
 
