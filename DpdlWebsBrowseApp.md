@@ -14,7 +14,8 @@ Dpdl source code folder:
 
 This Dpdl applications implements a fully compliant http embedded web-server which is capable of serving web content from a defined local directory via HTTP protocol. 
 
-Due to the fact that the mongoose C network library is compiled in memory at runtime by the Dpdl runtime (very fast compile time), this application is completely cross platform.
+Due to the fact that the mongoose C network library is compiled in memory at runtime by the Dpdl runtime (very fast compile time, 20 ms to compile and start the server),
+the application is completely cross platform.
 
 The applications provides also a browser like User Interface (UI) to navigate the hosted web-sites. The browser supports most content creation technologies available in modern browsers (Html5, css, Javascript).
 
