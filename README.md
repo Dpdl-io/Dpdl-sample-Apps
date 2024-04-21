@@ -21,7 +21,12 @@ Therefore the apps listed here are considered to be small prototype applications
 
 <img src="https://www.dpdl.io/images/platform/examples/Dpdl_3D_Example2_with_JavaFX.png" width="65%" height="65%">
 
-## DpdlMQTTApp - An embedded MQTT server and MQTT client with simple UI
+## DpdlWebBrowseApp - an embedded Web-server with a web-browser UI
+
+[DpdlWebsBrowseApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlWebsBrowseApp.md)
+
+
+## DpdlMQTTApp - an embedded MQTT server and MQTT client with simple UI
 
 [DpdlMQTTApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlMQTTApp.md)
 
