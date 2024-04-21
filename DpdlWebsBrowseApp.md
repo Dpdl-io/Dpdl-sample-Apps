@@ -20,7 +20,6 @@ The applications makes use of the Mongoose C network library and of the JavaFX l
 
 Due to the fact that the mongoose C network library is compiled in memory at runtime by the Dpdl runtime (very fast compile time, 20 ms to compile and start the server), the application is completely cross platform.
 
-
 As example web-site a dashboard (provided by Mongoose example) for controlling IoT devices via MQTT protocol is presented.
 
 **Web-server document root directory:**
