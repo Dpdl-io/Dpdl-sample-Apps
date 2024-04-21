@@ -9,6 +9,8 @@
 
 ## DpdlWebBrowseApp - an embedded Web-server with a web-browser UI
 
+Dpdl source code folder:
+[app/dpdlwebsbrowseapp](https://github.com/Dpdl-io/Dpdl-sample-Apps/tree/main/app/dpdlwebsbrowseapp)
 
 This Dpdl applications implements a fully compliant http embedded web-server which is capable of serving web content from a defined local directory via HTTP protocol. 
 
