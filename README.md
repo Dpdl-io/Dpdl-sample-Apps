@@ -6,9 +6,7 @@
 				
 
 
-This repository contains some sample applications implemented with:
-
-**<ins>Dpdl</ins> (Dynamic Packet Definition Language)**
+This repository contains some sample applications implemented with: **`Dpdl`** **(Dynamic Packet Definition Language)**
 
 https://github.com/Dpdl-io/DpdlEngine
 
