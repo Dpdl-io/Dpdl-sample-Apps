@@ -1,5 +1,8 @@
 # File: app/dpdlwebsbrowseapp/dpdlEmbeddedWebserver.h
 #
+# (c)opyright 2023
+# developed by SEE Solutions
+#
 # Example: Dpdl sample app 'DpdlWebsBrowseApp' that implements an embedded webserver (with C network library from Mongoose)
 #			and a browser like UI to browse the contents provided by the webserver in a fully browswer like fashion
 #
