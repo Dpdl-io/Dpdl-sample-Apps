@@ -21,7 +21,7 @@ Therefore the apps listed here are considered to be small prototype applications
 
 [Dpdl3DMolecules](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/Dpdl3DMolecules.md)
 
-<img src="https://www.dpdl.io/images/platform/examples/Dpdl_3D_Example2_with_JavaFX.png" width="65%" height="65%">
+<img src="https://www.dpdl.io/images/platform/examples/Dpdl_3D_Example2_with_JavaFX.png" width="70%" height="70%">
 
 ## DpdlWebBrowseApp - an embedded Web-server with a web-browser UI
 
