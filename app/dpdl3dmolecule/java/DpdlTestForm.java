@@ -2,7 +2,7 @@
  *                   Dpdl3DMolecule
  
 
-This java class is used int the Dpdl sample application 'Dpdl3DMolecule'
+This java class is used within the Dpdl sample application 'Dpdl3DMolecule', loaded and executed as java object in 'dpdl3DJavaFX_molecule.h' 
 
 https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/Dpdl3DMolecules.md
  
