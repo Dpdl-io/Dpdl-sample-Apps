@@ -38,6 +38,8 @@ Therefore the apps listed here are considered to be small prototype applications
 
 ## DpdlSimpleCryptApp - a simple application for encryption/decryption of strings of data
 
+This Dpdl module provides two basic functions for encryption/decryption of strings of data using the open source 'TinyCrypt' C library from Intel
+
 [DpdlSimpleCryptApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlSimpleCryptApp.md)
 
 
