@@ -36,6 +36,12 @@ Therefore the apps listed here are considered to be small prototype applications
 <img src="https://www.dpdl.io/images/platform/examples/dpdlmqttapp/DpdlMQTTApp_screen.png" width="55%" height="55%">
 
 
+## DpdlSimpleCryptApp - a simple application for encryption/decryption of strings of data
+
+[DpdlSimpleCryptApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlSimpleCryptApp.md)
+
+
+
 
 
 
