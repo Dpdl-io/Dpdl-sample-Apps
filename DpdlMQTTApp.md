@@ -8,7 +8,7 @@
 ##  DpdlMQTTApp - An embedded MQTT server and MQTT client with simple UI
 
 The Dpdl source code can be found in this folder:
-[dpdlmqttapp/](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/dpdlmqttapp/)
+[app/dpdlmqttapp/](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/app/dpdlmqttapp/)
 
 
 ### Description
