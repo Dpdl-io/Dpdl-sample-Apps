@@ -18,6 +18,7 @@ func encrypt(string data)
 
 	dpdl_stack_push("dpdlstack:tcrypt", "dpdl:applyvars", "dpdlbuf_myresult")
 
+	setStartTime()
 	>>c
 	#include <tinycrypt/cbc_mode.h>
 	#include <tinycrypt/constants.h>
@@ -70,6 +71,7 @@ func encrypt(string data)
 		for(c = 0; c < 80; c++){
 			printf("%u", encrypted[c]);
 		}
+		printf("\n");
 
 	    char buffer[256];
 	    int size =  sizeof(encrypted);
@@ -101,6 +103,8 @@ func encrypt(string data)
 		return result;
 	}
 	<<
+	int exec_time = getEndTime()
+	println("embedded C code compiled and executed in " + exec_time + " ms")
 	int exit_code = dpdl_exit_code()
 	println("embedded C exit code: " + exit_code);
 
@@ -112,7 +116,7 @@ end
 func decrypt(string data)
 
 	dpdl_stack_var_put("data_to_decrypt", data)
-	
+
 	dpdl_stack_push("dpdlstack:tcrypt", "dpdl:applyvars", "dpdlbuf_myresult")
 
 	>>c
@@ -173,12 +177,6 @@ func decrypt(string data)
 		    p_d += 2;
 		    cnt++;
 		} while (*p_d);
-
-		printf("DATA: \n");
-		int c_e;
-		for(c_e = 0; c_e < 80; c_e++){
-			printf("%u", encrypted[c_e]);
-		}
 
 		(void)tc_aes128_set_decrypt_key(&a, key);
 
