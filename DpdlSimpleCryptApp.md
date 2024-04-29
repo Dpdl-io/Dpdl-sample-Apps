@@ -12,9 +12,9 @@
 Dpdl application source code:
 [app/crypt](https://github.com/Dpdl-io/Dpdl-sample-Apps/tree/main/app/crypt)
 
-This small Dpdl application implements two functions suitable for encryption and decryption of strings of data.
+This small Dpdl application module implements two functions suitable for encryption and decryption of strings of data.
 
-The routines to encrypt and decrypt the data are implemented with Dpdl embedded C code using the small footprint cryptographic library 'TinyCrypt' https://github.com/intel/tinycrypt
+The routines to encrypt and decrypt the data are implemented within Dpdl embedded C code using the small footprint cryptographic library 'TinyCrypt' https://github.com/intel/tinycrypt
 
 The two functions are implemented in the Dpdl code file 'dpdlSimpleCryptApp.h':
 
@@ -22,9 +22,11 @@ The two functions are implemented in the Dpdl code file 'dpdlSimpleCryptApp.h':
 
 **`func decrypt(string data) return res`**
 
-The application main entry point 'start.h' loads the Dpdl code 'dpdlSimpleCryptApp.h' as an object an performs encryption/decryption of a test data string.
+The application main entry point 'start.h' loads the Dpdl code 'dpdlSimpleCryptApp.h' as an object to perform encryption/decryption of a test data string.
 
-The 'TinyCrypt' C library used to implement the embedded C encryption/decryption routines is compiled in memory at runtime by the Dpdl runtime (very fast compile time). This makes the application completely cross platform without the need to compile native components.
+The 'TinyCrypt' C library used to implement the embedded C encryption/decryption routines <ins>is compiled in memory at runtime</ins> by the Dpdl runtime (very fast compile time, ca. 69 ms to compile and run the encryption of a string).
+
+The on-the-fly compilation makes the application completely cross platform without the need to compile native components.
 
 
 
