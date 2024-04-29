@@ -16,9 +16,6 @@ func encrypt(string data)
 
 	dpdl_stack_var_put("data_to_encrypt", data)
 
-#println("Stack variables:")
-#dpdl_stack_var_print()
-
 	dpdl_stack_push("dpdlstack:tcrypt", "dpdl:applyvars", "dpdlbuf_myresult")
 
 	>>c
@@ -115,10 +112,7 @@ end
 func decrypt(string data)
 
 	dpdl_stack_var_put("data_to_decrypt", data)
-
-#println("Stack variables:")
-#dpdl_stack_var_print()
-
+	
 	dpdl_stack_push("dpdlstack:tcrypt", "dpdl:applyvars", "dpdlbuf_myresult")
 
 	>>c
