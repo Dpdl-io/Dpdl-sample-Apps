@@ -67,14 +67,14 @@ func encrypt(string data)
 
 		printf("\n");
 		printf("Encrypted data:\n");
+		int size = sizeof(encrypted);
 		int c;
-		for(c = 0; c < 80; c++){
+		for(c = 0; c < size; c++){
 			printf("%u", encrypted[c]);
 		}
 		printf("\n");
 
 	    char buffer[256];
-	    int size =  sizeof(encrypted);
 	    for (int i = 0; i < size; i++) {
 	         sprintf(buffer + strlen(buffer), "%02x", encrypted[i]);
 	    }
@@ -191,13 +191,13 @@ func decrypt(string data)
 
 		printf("\n");
 		printf("Decrypted data:\n");
+		int size = sizeof(decrypted);
 		int c;
-		for(c = 0; c < 64; c++){
+		for(c = 0; c < size; c++){
 			printf("%u", decrypted[c]);
 		}
 
 	    char buffer[256];
-	    int size =  sizeof(decrypted);
 	    for (int i = 0; i < size; i++) {
 	         sprintf(buffer + strlen(buffer), "%02x", decrypted[i]);
 	    }
