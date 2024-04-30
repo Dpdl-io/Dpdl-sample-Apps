@@ -7,7 +7,7 @@
 
 
 
-## DpdlSimpleCryptApp - a simple Dpdl application for encryption/decryption of strings of data
+## DpdlSimpleCryptApp - a simple Dpdl application module for encryption/decryption of strings of data
 
 **Dpdl source code**:
 [app/crypt](https://github.com/Dpdl-io/Dpdl-sample-Apps/tree/main/app/crypt)
