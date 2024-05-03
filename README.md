@@ -36,7 +36,7 @@ Therefore the apps listed here are considered to be small prototype applications
 <img src="https://www.dpdl.io/images/platform/examples/dpdlmqttapp/DpdlMQTTApp_screen.png" width="55%" height="55%">
 
 
-## DpdlSimpleCryptApp - a simple application module for encryption/decryption of strings of data
+## DpdlSimpleCryptApp - a simple application module for AES-128 encryption/decryption of strings of data
 
 This Dpdl application module provides two basic functions for encryption/decryption of strings of data with AES-128 using the open source 'TinyCrypt' C library from Intel
 
