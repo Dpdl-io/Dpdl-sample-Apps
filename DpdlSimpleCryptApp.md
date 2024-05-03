@@ -7,12 +7,12 @@
 
 
 
-## DpdlSimpleCryptApp - a simple Dpdl application module for encryption/decryption of strings of data
+## DpdlSimpleCryptApp - a simple Dpdl application module for AES-128 encryption/decryption of strings of data
 
 **Dpdl source code**:
 [app/crypt](https://github.com/Dpdl-io/Dpdl-sample-Apps/tree/main/app/crypt)
 
-This small Dpdl application module implements two functions suitable for encryption and decryption of strings of data.
+This small Dpdl application module implements two functions suitable for AES-128 encryption and decryption of strings of data.
 
 The routines to encrypt and decrypt the data are implemented within Dpdl embedded C code using the small footprint cryptographic library 'TinyCrypt' https://github.com/intel/tinycrypt
 
