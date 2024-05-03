@@ -1,11 +1,12 @@
-# DpdlSimpleCryptApp - a simple sample application written with Dpdl
+# DpdlSimpleCryptApp - a simple sample application module written with Dpdl
 #
 # (c)opyright 2023
 # developed by SEE Solutions
 #
 # File: app/crypt/dpdlSimpleCryptApp.h
 #
-# Example: Sample Dpdl code 'DpdlSimpleCryptApp' that implements encryption and decryption of strings of data
+# Example: Sample Dpdl code 'DpdlSimpleCryptApp' that implements AES-128 encryption and decryption of strings of data
+#			via Dpdl embedded C code that makes use of the tinycrypt C library
 #
 # Author: A.Costa
 # e-mail: ac@dpdl.io
@@ -38,12 +39,25 @@ func encrypt(string data)
 			{{iv}}
 	};
 
+	char* convert2hexstr(const unsigned char* data, size_t datalen) {
+	  size_t final_len = datalen * 2;
+	  char* chrs = (unsigned char *) malloc((final_len + 1) * sizeof(*chrs));
+	  unsigned int j = 0;
+	  for(j = 0; j<datalen; j++) {
+	    chrs[2*j] = (data[j]>>4)+48;
+	    chrs[2*j+1] = (data[j]&15)+48;
+	    if (chrs[2*j]>57) chrs[2*j]+=7;
+	    if (chrs[2*j+1]>57) chrs[2*j+1]+=7;
+	  }
+	  chrs[2*j]='\0';
+	  return chrs;
+	}
+
 	int test_encrypt(void)
 	{
 		struct tc_aes_key_sched_struct a;
 		uint8_t iv_buffer[16];
 		uint8_t encrypted[80];
-		uint8_t decrypted[64];
 		uint8_t *p;
 		unsigned int length;
 		int result = 1;
@@ -55,8 +69,9 @@ func encrypt(string data)
 		const uint8_t plaintext[64] = "{{data_to_encrypt}}";
 
 		printf("Data to encrypt: %s\n", plaintext);
-
 		printf("size: %d\n", sizeof(plaintext));
+
+		printf("performing encryption...\n");
 
 		if (tc_cbc_mode_encrypt(encrypted, sizeof(plaintext) + TC_AES_BLOCK_SIZE,
 					plaintext, sizeof(plaintext), iv_buffer, &a) == 0) {
@@ -65,19 +80,12 @@ func encrypt(string data)
 			goto exit_e;
 		}
 
-		printf("\n");
-		printf("Encrypted data:\n");
-		int size = sizeof(encrypted);
-		int c;
-		for(c = 0; c < size; c++){
-			printf("%u", encrypted[c]);
-		}
+		printf("done\n");
+
 		printf("\n");
 
-	    char buffer[256];
-	    for (int i = 0; i < size; i++) {
-	         sprintf(buffer + strlen(buffer), "%02x", encrypted[i]);
-	    }
+		int size = sizeof(encrypted);
+	    char *buffer = convert2hexstr(encrypted, size);
 
 	    dpdl_stack_buf_put(buffer);
 
@@ -89,11 +97,11 @@ func encrypt(string data)
 		int result = 1;
 
 		printf("----------------------------------------------------------\n");
-		printf("encrypting data...\n");
+		printf("encrypting data with aes-128...\n");
 
 		result = test_encrypt();
 		if (result == -1) {
-			TC_ERROR("data encryption failed.\n");
+			printf("data encryption failed.\n");
 		}else{
 			printf("data encrypted successfully\n");
 		}
@@ -105,6 +113,7 @@ func encrypt(string data)
 	<<
 	int exec_time = getEndTime()
 	println("embedded C code compiled and executed in " + exec_time + " ms")
+
 	int exit_code = dpdl_exit_code()
 	println("embedded C exit code: " + exit_code);
 
@@ -119,6 +128,7 @@ func decrypt(string data)
 
 	dpdl_stack_push("dpdlstack:tcrypt", "dpdl:applyvars", "dpdlbuf_myresult")
 
+	setStartTime()
 	>>c
 	#include <tinycrypt/cbc_mode.h>
 	#include <tinycrypt/constants.h>
@@ -138,15 +148,30 @@ func decrypt(string data)
 			{{iv}}
 	};
 
-	int hex2int(char ch)
-	{
-	    if (ch >= '0' && ch <= '9')
-	        return ch - '0';
-	    if (ch >= 'A' && ch <= 'F')
-	        return ch - 'A' + 10;
-	    if (ch >= 'a' && ch <= 'f')
-	        return ch - 'a' + 10;
+
+	int hexStringToBytes(const char *hexStr, uint8_t *output, unsigned int *outputLen) {
+	  size_t len = strlen(hexStr);
+	  if (len % 2 != 0) {
 	    return -1;
+	  }
+	  size_t finalLen = len / 2;
+	  *outputLen = finalLen;
+	  for (size_t inIdx = 0, outIdx = 0; outIdx < finalLen; inIdx += 2, outIdx++) {
+	    if ((hexStr[inIdx] - 48) <= 9 && (hexStr[inIdx + 1] - 48) <= 9) {
+	      goto convert;
+	    } else {
+	      if ((hexStr[inIdx] - 65) <= 5 && (hexStr[inIdx + 1] - 65) <= 5) {
+	        goto convert;
+	      } else {
+	        *outputLen = 0;
+	        return -1;
+	      }
+	    }
+	  convert:
+	    output[outIdx] = (hexStr[inIdx] % 32 + 9) % 25 * 16 + (hexStr[inIdx + 1] % 32 + 9) % 25;
+	  }
+	  output[finalLen] = '\0';
+	  return 0;
 	}
 
 
@@ -154,34 +179,40 @@ func decrypt(string data)
 	{
 		struct tc_aes_key_sched_struct a;
 		uint8_t iv_buffer[16];
-		uint8_t encrypted[80];
+		uint8_t encrypted[160];
 		uint8_t decrypted[64];
 		uint8_t *p;
 		unsigned int length;
 		int result = 1;
 
-		(void)tc_aes128_set_encrypt_key(&a, key);
+		(void)tc_aes128_set_decrypt_key(&a, key);
 
 		(void)memcpy(iv_buffer, iv, TC_AES_BLOCK_SIZE);
 
-		char data_in[256] = "{{data_to_decrypt}}";
-		char *p_d = data_in;
+		const char *data_in = "{{data_to_decrypt}}";
 
-		printf("Data to decrypt: %s\n", p_d);
+		printf("decoding hex string...\n");
+		unsigned int nr_bytes;
+		int status_dec = hexStringToBytes(data_in, encrypted, &nr_bytes);
+		printf("status: %d\n", status_dec);
+		if(status_dec != 0){
+			printf("error: unable to decode hex string\n");
+			return -1;
+		}
+
+		printf("decoded data:\n");
+		int sizen = sizeof(encrypted);
+		int cp;
+		for(cp = 0; cp < sizen; cp++){
+			printf("%u", encrypted[cp]);
+		}
+
 		printf("\n");
-
-		int cnt = 0;
-		do {
-		    uint8_t value = (hex2int(p_d[0]) << 4) + hex2int(p_d[1]);
-		    encrypted[cnt] = value;
-		    p_d += 2;
-		    cnt++;
-		} while (*p_d);
-
-		(void)tc_aes128_set_decrypt_key(&a, key);
 
 		p = &encrypted[TC_AES_BLOCK_SIZE];
 		length = ((unsigned int) sizeof(encrypted));
+
+		printf("performing decryption...\n");
 
 		if (tc_cbc_mode_decrypt(decrypted, length, p, length, encrypted, &a) == 0) {
 			printf("decryption failed!\n");
@@ -189,18 +220,11 @@ func decrypt(string data)
 			goto exit_d;
 		}
 
-		printf("\n");
-		printf("Decrypted data:\n");
-		int size = sizeof(decrypted);
-		int c;
-		for(c = 0; c < size; c++){
-			printf("%u", decrypted[c]);
-		}
+		printf("done\n");
 
 	    char buffer[256];
-	    for (int i = 0; i < size; i++) {
-	         sprintf(buffer + strlen(buffer), "%02x", decrypted[i]);
-	    }
+	    sprintf(buffer, "%s", decrypted);
+
 	    printf("\n");
 
 		dpdl_stack_buf_put(buffer);
@@ -213,7 +237,7 @@ func decrypt(string data)
 		int result = 1;
 
 		printf("----------------------------------------------------------\n");
-		printf("decrypting data...\n");
+		printf("decrypting aes-128 data...\n");
 
 		result = test_decrypt();
 		if (result == -1) {
@@ -229,6 +253,9 @@ func decrypt(string data)
 		return result;
 	}
 	<<
+	int exec_time = getEndTime()
+	println("embedded C code compiled and executed in " + exec_time + " ms")
+
 	int exit_code = dpdl_exit_code()
 	println("embedded C exit code: " + exit_code);
 
@@ -238,7 +265,7 @@ func decrypt(string data)
 end
 
 # main
-println("dpdlSimpleCryptApp()")
+println("init dpdlSimpleCryptApp() dpdl module crypt")
 
 dpdl_stack_push("dpdlstack:tcrypt", "dpdl:applyvars", "dpdlbuf_myresult", "dpdl:compile", "dpdl:-I./DpdlLibs/app/crypt/include", "dpdl:-A./DpdlLibs/app/crypt/src")
 
