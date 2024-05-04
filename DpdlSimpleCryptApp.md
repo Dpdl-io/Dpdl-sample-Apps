@@ -14,9 +14,9 @@
 
 This small Dpdl application module implements two functions suitable for AES-128 encryption and decryption of strings of data.
 
-The routines to encrypt and decrypt the data are implemented within Dpdl embedded C code using the small footprint cryptographic library 'TinyCrypt' https://github.com/intel/tinycrypt
+The routines to encrypt and decrypt the data are implemented within Dpdl embedded C code using the small footprint cryptographic C library 'TinyCrypt' https://github.com/intel/tinycrypt
 
-The two functions are implemented in the Dpdl code file 'dpdlSimpleCryptApp.h':
+The two dpdl functions are implemented in the Dpdl code file 'dpdlSimpleCryptApp.h':
 
 **`func encrypt(string data) return res`**
 
@@ -26,7 +26,7 @@ The application main entry point 'start.h' loads the Dpdl code 'dpdlSimpleCryptA
 
 The 'TinyCrypt' C library used to implement the embedded C encryption/decryption routines <ins>is compiled in memory at runtime</ins> by the Dpdl runtime (very fast compile time, ca. 55 ms to compile and run the encryption/decryption of a string).
 
-The on-the-fly compilation makes the application completely cross platform without the need to compile native components.
+The on-the-fly compilation makes the application module completely cross platform without the need to compile any native components.
 
 
 
