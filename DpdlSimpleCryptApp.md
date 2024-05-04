@@ -24,7 +24,7 @@ The two functions are implemented in the Dpdl code file 'dpdlSimpleCryptApp.h':
 
 The application main entry point 'start.h' loads the Dpdl code 'dpdlSimpleCryptApp.h' as an object to perform encryption/decryption of a test data string.
 
-The 'TinyCrypt' C library used to implement the embedded C encryption/decryption routines <ins>is compiled in memory at runtime</ins> by the Dpdl runtime via TCC (very fast compile time, ca. 55 ms to compile and run the encryption/decryption of a string).
+The 'TinyCrypt' C library used to implement the embedded C encryption/decryption routines <ins>is compiled in memory at runtime</ins> by the Dpdl runtime with TCC (very fast compile time, ca. 55 ms to compile and run the encryption/decryption of a string).
 
 The on-the-fly compilation makes the application completely cross platform without the need to compile native components.
 
