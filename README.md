@@ -46,7 +46,11 @@ This Dpdl application module provides two basic functions for encryption/decrypt
 
 Simple Dpdl sample application that used the 'libethc' C library to create and sign transaction that can than be sumitted to the network
 
+<img src="https://www.dpdl.io/images/dpdlsampleapps/eth_logo.png" width="30%" height="30%">
+
 [DpdlCryptoTransactionApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlCryptoTransactionApp.md)
+
+
 
 
 
