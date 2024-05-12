@@ -8,7 +8,7 @@
 ##  DpdlCryptoTransactionApp - A simple Dpdl application to create a sign Ethereum (ETH) transactions
 
 **Dpdl source code**:
-[app/dpdlcryptotransationapp/](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/app/dpdlcryptotransationapp/)
+[app/dpdlcryptotransactionapp/](https://github.com/Dpdl-io/Dpdl-sample-Apps/tree/main/app/dpdlcryptotransactionapp)
 
 
 ### Description
