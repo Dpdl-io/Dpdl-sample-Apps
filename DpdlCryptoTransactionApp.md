@@ -36,5 +36,7 @@ printed out to the screen. Very simple but effective;)
 The 'libethc' lib is not included (only the include files) but you can find the instructions where to download and how to
 deploy in the C library in the './lib/README.txt' file
 
+NOTICE: Do not sent transactions to the address specified in the 'to_addr' parameter, EXCEPT if you want to make a donation to Dpdl-io:)
+
 
 
