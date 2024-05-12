@@ -42,6 +42,12 @@ This Dpdl application module provides two basic functions for encryption/decrypt
 
 [DpdlSimpleCryptApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlSimpleCryptApp.md)
 
+## DpdlCryptoTransactionApp - a simple application to create and sign Ethereum (ETH) transactions
+
+Simple Dpdl sample application that used the 'libethc' C library to create and sign transaction that can than be sumitted to the network
+
+[DpdlCryptoTransactionApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlCryptoTransactionApp.md)
+
 
 
 
