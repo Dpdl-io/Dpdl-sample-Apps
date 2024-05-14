@@ -16,7 +16,7 @@
 The Dpdl app 'DpdlCryptoTransactionApp' serves as demonstrator of how Dpdl can be used to implement some applications.
 
 The application make use of the 'libethc' C library to create and sign Ethereum transactions which can than eventually 
-be sent to the Ethereum network for processing. The transaction is Only create, but NOT send to the network.
+be sent to the Ethereum network for processing. The transaction is Only created, but NOT sent to the network.
 
 The following parameters can be adjusted in the Dpdl code (in hex format): 
 
