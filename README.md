@@ -54,6 +54,8 @@ Simple Dpdl sample application that used the 'libethc' C library to create and s
 
 Dpdl sample application that creates a 3D visualization in the web browser with WebGL
 
+[DpdlWeb3DApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlWeb3DApp.md)
+
 <img src="https://www.dpdl.io/images/platform/examples/dpdlweb3dapp/DpdlWeb3DApp_screen.png" width="55%" height="55%">
 
 [VIDEO of DpdlWeb3DApp in action](https://youtu.be/kdXKmScT3ZI)
