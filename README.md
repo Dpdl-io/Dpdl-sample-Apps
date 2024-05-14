@@ -50,8 +50,13 @@ Simple Dpdl sample application that used the 'libethc' C library to create and s
 
 [DpdlCryptoTransactionApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlCryptoTransactionApp.md)
 
+## DpdlWeb3DApp - a 3D visualization in the web browser
 
+Dpdl sample application that creates a 3D visualization in the web browser with WebGL
 
+<img src="https://www.dpdl.io/images/platform/examples/dpdlweb3dapp/DpdlWeb3DApp_screen.png" width="55%" height="55%">
+
+[VIDEO of DpdlWeb3DApp in action](https://youtu.be/kdXKmScT3ZI)
 
 
 
