@@ -14,7 +14,13 @@
 
 This small Dpdl application module implements two functions suitable for AES-128 encryption and decryption of strings of data.
 
-The routines to encrypt and decrypt the data are implemented within Dpdl embedded C code using the small footprint cryptographic C library 'TinyCrypt' https://github.com/intel/tinycrypt
+The Dpdl code that iimplements encryption/decryption is this [dpdlSimpleCryptApp.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/app/crypt/dpdlSimpleCryptApp.h)
+
+```python
+encrypt(string data) return string enc_data
+decrypt(string data) return string dec_deta
+```
+The routines to encrypt and decrypt the data are implemented within Dpdl using embedded C code with the small footprint cryptographic C library 'TinyCrypt' https://github.com/intel/tinycrypt
 
 The two dpdl functions are implemented in the Dpdl code file 'dpdlSimpleCryptApp.h':
 
