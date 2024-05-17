@@ -47,7 +47,7 @@ The app consists of 3 modules:
 	
 The components related to the Mqtt protocol are implemented using the Mongoose embedded library, a very compact and established C library (https://mongoose.ws/)
 
-The main application entry point is the Dpdl module [dpdlmqttapp/start.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/dpdlmqttapp/start.h) which performs the following:
+The main application entry point is the Dpdl module [dpdlmqttapp/start.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/app/dpdlmqttapp/start.h) which performs the following:
 
 - creates a UI using the Java JRE swing libraries via the include code [dpdlmqttapp/dpdlMqttUI.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/app/dpdlmqttapp/dpdlMqttUI.h)
 - creates a dedicated Dpdl thread instance to run the MQTT server code [dpdlmqttapp/dpdlMqttServer.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/app/dpdlmqttapp/dpdlMqttServer.h)
