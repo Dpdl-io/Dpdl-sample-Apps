@@ -25,11 +25,13 @@ Therefore the apps listed here are considered to be small prototype applications
 
 [VIDEO of Dpdl3DMolecule app in action](https://youtu.be/82SRI_L3vLc)
 
-## DpdlWebBrowseApp - an embedded Web-server with a web-browser UI
+## DpdlWebsBrowseApp - an embedded Web-server with a web-browser UI
 
 [DpdlWebsBrowseApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlWebsBrowseApp.md)
 
 <img src="https://www.dpdl.io/images/platform/examples/dpdlwebsbrowseapp/DpdlWebsBrowseApp_screen2.png" width="70%" height="70%">
+
+[VIDEO of DpdlWebsBrowserApp in action](https://youtu.be/qP-F1kF_-_c)
 
 ## DpdlMQTTApp - an embedded MQTT server and MQTT client with simple UI
 
