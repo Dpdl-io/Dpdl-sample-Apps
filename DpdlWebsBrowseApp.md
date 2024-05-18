@@ -22,6 +22,10 @@ The mongoose C network library used to implement the embedded web-server is comp
 
 As example web-site, the web-server hosts a dashboard (provided by Mongoose example) for controlling IoT devices via MQTT protocol.
 
+[VIDEO of DpdlWebBrowserApp in action](https://youtu.be/qP-F1kF_-_c)
+
+### Screenshots
+
 **Web-server document root directory listing:**
 
 <img src="https://www.dpdl.io/images/platform/examples/dpdlwebsbrowseapp/DpdlWebsBrowseApp_screen1.png" width="60%" height="60%">
