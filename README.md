@@ -60,7 +60,7 @@ Dpdl sample application that creates a 3D visualization in the web browser with 
 
 [DpdlWeb3DApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlWeb3DApp.md)
 
-<img src="https://www.dpdl.io/images/platform/examples/dpdlweb3dapp/DpdlWeb3DApp_screen.png" width="55%" height="55%">
+<img src="https://www.dpdl.io/images/platform/examples/dpdlweb3dapp/DpdlWeb3DApp_screen.png" width="70%" height="70%">
 
 [VIDEO of DpdlWeb3DApp in action](https://youtu.be/kdXKmScT3ZI)
 
