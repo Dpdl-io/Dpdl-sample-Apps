@@ -36,9 +36,11 @@ Linux 3.7+
 
 The following keyboard commands are available once the app is running and emitting sound:
 
+```
 'p' -> pause
 'u' -> unpause
 'P' -> pause from callback
 'c' -> clear buffer
 'q' -> terminate
+```
 
