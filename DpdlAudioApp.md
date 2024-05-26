@@ -12,7 +12,7 @@
 
 ### Description
 
-The Dpdl app 'DpdlSoundAudioApp' is a simple audio application that emits sound waves via various audio backends available on the platform.
+The Dpdl app '**DpdlSoundAudioApp**' is a simple audio application that emits sound waves via various audio backends available on the platform.
 
 The sound capability is implemented with embedded C code wihin Dpdl that makes use of the cross-platform 'libsoundio' C library to handle audio input and output.
 The library provides an abstraction layer for accessing audio input/output capabilities via variouns configurable backends.
