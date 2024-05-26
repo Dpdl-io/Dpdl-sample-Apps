@@ -64,6 +64,15 @@ Dpdl sample application that creates a 3D visualization in the web browser with 
 
 [VIDEO of DpdlWeb3DApp in action](https://youtu.be/kdXKmScT3ZI)
 
+## DpdlSoundAudioApp - a sample Dpdl application to emit sound audio waves via various audio backends available
+
+Dpdl sample application that emits audio waves via various audio backends implemented with embedded C code using the cross-platform 'libsoundio' C library
+
+[DpdlSoundAudioApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlSoundAudioApp.md)
+
+
+
+
 
 
 
