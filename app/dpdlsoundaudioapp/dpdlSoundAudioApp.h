@@ -5,7 +5,7 @@
 #
 # File: app/dpdlsoundaudioapp/dpdlSoundAudioApp.h
 #
-# Example: Sample Dpdl code 'DpdlSoundAudioApp' that emits a sine wave audio sound using the 'libsoundio' C library
+# Example: Sample Dpdl code 'DpdlSoundAudioApp' that emits a sine wave audio sound using the 'libsoundio' C library. The C code is from the 'libsoundio' examples
 #			Commands:
 #						'p' -> pause
 #						'u' -> unpause
