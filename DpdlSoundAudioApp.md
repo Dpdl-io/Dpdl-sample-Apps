@@ -32,4 +32,13 @@ Windows 7+
 MacOS 10.10+
 Linux 3.7+
 
+### Command actions avalable
+
+The following keyboard commands are available once the app is running and emitting sound:
+
+'p' -> pause
+'u' -> unpause
+'P' -> pause from callback
+'c' -> clear buffer
+'q' -> terminate
 
