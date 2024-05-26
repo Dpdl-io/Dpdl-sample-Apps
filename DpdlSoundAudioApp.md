@@ -28,9 +28,9 @@ The library provides an abstraction layer for accessing audio input/output capab
 
 ### Supported OS:
 
-Windows 7+
-MacOS 10.10+
-Linux 3.7+
+- Windows 7+
+- MacOS 10.10+
+- Linux 3.7+
 
 ### Command actions avalable
 
