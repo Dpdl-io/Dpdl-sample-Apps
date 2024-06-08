@@ -17,4 +17,4 @@ The app makes use of embedded 'Clojure' code within Dpdl to create the UI and pe
 
 ### Screenshot
 
-<img src="https://www.dpdl.io/images/platform/examples/Dpdl_example_Celsius_Fahrenheit_UI.png" width="45%" height="45%">
+<img src="https://www.dpdl.io/images/platform/examples/Dpdl_example_Celsius_Fahrenheit_UI.png" width="40%" height="40%">
