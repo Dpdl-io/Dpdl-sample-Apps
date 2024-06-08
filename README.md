@@ -76,7 +76,7 @@ Dpdl sample application that creates a simple UI to convert degree values from C
 
 [DpdlCelsiusConverterApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlCelsiusConverterApp.md)
 
-<img src="https://www.dpdl.io/images/platform/examples/Dpdl_example_Celsius_Fahrenheit_UI.png" width="33%" height="33%">
+<img src="https://www.dpdl.io/images/platform/examples/Dpdl_example_Celsius_Fahrenheit_UI.png" width="45%" height="45%">
 
 
 
