@@ -70,6 +70,13 @@ Dpdl sample application that emits audio waves via various audio backends implem
 
 [DpdlSoundAudioApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlSoundAudioApp.md)
 
+## DpdlCelsiusConverterApp - a simple Celsius to Fahrenheit converter app with UI
+
+Dpdl sample application that creates a simple UI to convert degree values from Celsius to Fahrenheit. The app makes use of embedded 'Clojure' code
+
+[DpdlCelsiusConverterApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlCelsiusConverterApp.md)
+
+<img src="https://www.dpdl.io/images/platform/examples/Dpdl_example_Celsius_Fahrenheit_UI.png" width="33%" height="33%">
 
 
 
