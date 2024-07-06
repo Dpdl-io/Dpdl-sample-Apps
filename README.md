@@ -78,7 +78,9 @@ Dpdl sample application that creates a simple UI to convert degree values from C
 
 <img src="https://www.dpdl.io/images/platform/examples/Dpdl_example_Celsius_Fahrenheit_UI.png" width="40%" height="40%">
 
+## DpdlTrainLLM - a compact lightweight method for training and reproducing the GPT-2 model mini series
 
+[DpdlTrainLLM](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlTrainLLM.md)
 
 
 
