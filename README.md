@@ -80,6 +80,8 @@ Dpdl sample application that creates a simple UI to convert degree values from C
 
 ## DpdlTrainLLM - a compact lightweight method for training and reproducing the GPT-2 model mini series
 
+Performs LLM training in 40 steps to generate a GTP-2 model (124 Mb) from a data source that consists of 'tinystories' and 'tinyshakespeare' which are avaialbe as already tokenized datasets.
+
 [DpdlTrainLLM](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlTrainLLM.md)
 
 
