@@ -10,6 +10,8 @@
 **Dpdl source code**:
 [app/dpdltrainllmapp/](https://github.com/Dpdl-io/Dpdl-sample-Apps/tree/main/app/dpdltrainllmapp)
 
+The app consists of the following Dpdl source:
+[dpdlTrainLLM.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/tree/main/app/dpdltrainllmapp/dpdlTrainLLM.h)
 
 ### Description
 
