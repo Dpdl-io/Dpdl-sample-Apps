@@ -10,7 +10,8 @@ This repository contains some sample applications implemented with: **`Dpdl`** *
 
 https://github.com/Dpdl-io/DpdlEngine
 
-The purpose of the small applications listed here is to serve as demonstrators to show some features and language constructs of Dpdl.
+The purpose of the small applications listed here is to serve as demonstrators to show some features and language constructs of Dpdl as well as to
+prove the compliace to the techologies supported.
 
 Therefore the apps listed here are considered to be small prototype applications written with Dpdl.
 
