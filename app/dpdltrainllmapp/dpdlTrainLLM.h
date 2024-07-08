@@ -8,7 +8,8 @@
 #
 # Example: performs LLM training in 40 steps and generates a GPT-2 model (124 Mb) using the 'llm.c' C library. The training data
 #			consists of 'tinystories' and 'tinyshakespeare' which are avaialbe as already tokenized datasets.
-#			The embedded C code is from the 'llm.c' examples
+#			The embedded C code is from the 'llm.c' examples.
+#			The time elapsed for the training is written as a string to the dpdl stack.
 #
 #
 # Author: A.Costa
@@ -44,6 +45,9 @@ dpdl_stack_push("dpdlbuf_res", "dpdl:applyvars", "dpdl:compile", "dpdl:-I./DpdlL
 #include "tokenizer.h"
 // defines: dataloader_init, dataloader_reset, dataloader_next_batch, dataloader_free
 #include "dataloader.h"
+
+
+extern void dpdl_stack_buf_put(char *buf);
 
 // ----------------------------------------------------------------------------
 // all the individual layers' forward and backward passes
@@ -1068,6 +1072,8 @@ int dpdl_main(int argc, char **argv) {
 
     // train
     struct timespec start, end;
+    double total_time_elapsed = 0;
+
     for (int step = 0; step <= 40; step++) {
 
         // once in a while estimate the validation loss
@@ -1130,7 +1136,14 @@ int dpdl_main(int argc, char **argv) {
         clock_gettime(CLOCK_MONOTONIC, &end);
         double time_elapsed_s = (end.tv_sec - start.tv_sec) + (end.tv_nsec - start.tv_nsec) / 1e9;
         printf("step %d: train loss %f (took %f ms)\n", step, model.mean_loss, time_elapsed_s * 1000);
+        total_time_elapsed += (time_elapsed_s * 1000);
     }
+
+    // we write some result to the dpdl stack
+    char buf_res[256];
+    sprintf(buf_res, "Total time for 40 steps = %f ms", total_time_elapsed);
+
+    dpdl_stack_buf_put(buf_res);
 
     // free
     dataloader_free(&train_loader);
@@ -1150,7 +1163,6 @@ raise(exit_code, "Error in executing llm training")
 
 string res = dpdl_stack_buf_get("dpdlbuf_res")
 
-println("LLM result: ")
+println("LLM result: " + res)
 
-println(res)
-
+println("finished")
