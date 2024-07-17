@@ -10,6 +10,9 @@
 **Dpdl source code**:
 [app/dpdlsoundaudioapp/](https://github.com/Dpdl-io/Dpdl-sample-Apps/tree/main/app/dpdlsoundaudioapp)
 
+Main source file:
+[dpdlSoundAudioApp.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/app/dpdlsoundaudioapp/dpdlSoundAudioApp.h)
+
 ### Description
 
 The Dpdl app '**DpdlSoundAudioApp**' is a sample audio application that emits sound waves via various audio backends available on the platform.
