@@ -85,6 +85,25 @@ Performs LLM training in 40 steps to generate a GTP-2 model (124 Mb) from a data
 
 [DpdlTrainLLM](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlTrainLLM.md)
 
+# Here some very <ins>Old</ins>, archived J2ME based projects developed using Dpdl
+
+## Dynamic Skiing Location System (DSLS) - developed in year 2006
+
+This mobile phone application have been developed by SEE Solutions in 2006, and was the sucessor of an earlier prototype application named MSLS (Mobile Skiiing Location System) developed in 2003.
+
+The DSLS mobile application is a J2ME compiant navigation system for skiers that used Bluetooth(tm) technology to derive the skier's location, either via bluetooth gateways positioned at the lifts, or via and external bluetooth GPS receiver.
+
+<img src="http://www.seesolutions.it/images/products/DSLS.png" width="40%" height="40%">
+
+More info about DSLS can be found here: [Dynamic Skiing Location System DSLS.pdf](http://www.seesolutions.it/documents/Dynamic%20Skiing%20Location%20System%20DSLS.pdf)
+
+Dpdl existed already as embedded scripting language and has been used in the project to handle blueooth connections, data and to perform dynamic drawings of the map canvas. The bluetooth client and bluetooth server was entirely developed with Dpdl.
+
+
+
+
+
+
 
 
 
