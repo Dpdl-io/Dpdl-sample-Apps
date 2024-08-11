@@ -93,7 +93,8 @@ This mobile phone application have been developed by SEE Solutions in 2006, and 
 
 The DSLS mobile application is a J2ME compiant navigation system for skiers that used Bluetooth(tm) technology to derive the skier's location, either via bluetooth gateways positioned at the lifts, or via and external bluetooth GPS receiver.
 
-<img src="http://www.seesolutions.it/images/products/DSLS.png" width="40%" height="40%">
+<img src="http://www.seesolutions.it/images/products/DSLS.png" width="70%" height="70%">
+(DSLS running on Nokia 6600 mobile phone CDLC 2.0)
 
 More info about DSLS can be found here: [Dynamic Skiing Location System DSLS.pdf](http://www.seesolutions.it/documents/Dynamic%20Skiing%20Location%20System%20DSLS.pdf)
 
