@@ -98,7 +98,7 @@ The DSLS mobile application is a J2ME compiant navigation system for skiers that
 
 More info about DSLS can be found here: [Dynamic Skiing Location System DSLS.pdf](http://www.seesolutions.it/documents/Dynamic%20Skiing%20Location%20System%20DSLS.pdf)
 
-Dpdl existed already as embedded scripting language and has been used in the project to handle blueooth connections, data and to perform dynamic drawings of the map canvas. The bluetooth client and bluetooth server was entirely developed with Dpdl.
+<ins>Dpdl existed already as embedded scripting language and has been used in the project to handle blueooth connections, data and to perform dynamic drawings of the map canvas. The bluetooth client and bluetooth server was entirely developed with Dpdl</ins>.
 
 
 
