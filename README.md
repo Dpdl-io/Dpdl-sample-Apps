@@ -85,7 +85,8 @@ Performs LLM training in 40 steps to generate a GTP-2 model (124 Mb) from a data
 
 [DpdlTrainLLM](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlTrainLLM.md)
 
-# Here some <ins>very Old</ins>, archived J2ME based projects developed using Dpdl
+
+# some <ins>old</ins> projects developed using Dpdl
 
 ## Dynamic Skiing Location System (DSLS) - developed in year 2006
 
