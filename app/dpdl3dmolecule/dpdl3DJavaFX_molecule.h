@@ -1,4 +1,4 @@
-# File: app/dpdl3dmolecule/dpdl3DJavaFX_molecule.h
+# File: graphics/dpdl3DJavaFX_molecule.h
 #
 # Example: Small Dpdl app that uses JavaFX library to render and animate chemical molecules in 3D.
 #			This code makes use of a custom java class implementation 'DpdlTestForm.java' located in the folder './java'
@@ -6,13 +6,34 @@
 #
 # Author: A.Costa
 # e-mail: ac@dpdl.io
-# www.dpdl.io
 #
 #
 import('thread')
 
+
+double CAMERA_INITIAL_DISTANCE = -450.0d
+double CAMERA_INITIAL_X_ANGLE = 70.0d
+double CAMERA_INITIAL_Y_ANGLE = 320.0d
+double CAMERA_NEAR_CLIP = 0.1d
+double CAMERA_FAR_CLIP = 10000.0d
+double AXIS_LENGTH = 250.0d
+double HYDROGEN_ANGLE = 104.5d
+double CONTROL_MULTIPLIER = 0.1d
+double SHIFT_MULTIPLIER = 10.0d
+double MOUSE_SPEED = 0.1d
+double ROTATION_SPEED = 2.0d
+double TRACK_SPEED = 0.3d
+
+double mousePosX
+double mousePosY
+double mouseOldX
+double mouseOldY
+double mouseDeltaX
+double mouseDeltaY
+
+
 func dpdl_javafx_start(object stage)
-	stage.setTitle("Dpdl3DMolecule App")
+	stage.setTitle("Dpdl Sample Application (Molecule 3D)")
 
 	stage.setScene(scene)
 	stage.show()
@@ -209,25 +230,6 @@ func buildMolecule()
 	world.addAllTMP1(moleculeGroup)
 end
 
-double CAMERA_INITIAL_DISTANCE = -450.0d
-double CAMERA_INITIAL_X_ANGLE = 70.0d
-double CAMERA_INITIAL_Y_ANGLE = 320.0d
-double CAMERA_NEAR_CLIP = 0.1d
-double CAMERA_FAR_CLIP = 10000.0d
-double AXIS_LENGTH = 250.0d
-double HYDROGEN_ANGLE = 104.5d
-double CONTROL_MULTIPLIER = 0.1d
-double SHIFT_MULTIPLIER = 10.0d
-double MOUSE_SPEED = 0.1d
-double ROTATION_SPEED = 2.0d
-double TRACK_SPEED = 0.3d
-
-double mousePosX
-double mousePosY
-double mouseOldX
-double mouseOldY
-double mouseDeltaX
-double mouseDeltaY
 
 # main
 println("starting...")
@@ -286,5 +288,4 @@ scene.setOnMouseDragged(mouse_event_handler)
 
 object key_event_handler = loadObj("KeyEventHandler")
 scene.setOnKeyPressed(key_event_handler)
-
 
