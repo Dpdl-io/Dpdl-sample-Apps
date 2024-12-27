@@ -90,7 +90,7 @@ Performs LLM training in 40 steps to generate a GTP-2 model (124 Mb) from a data
 
 SHA-1 hash algorithm implementation entirely written in Dpdl
 
-[DpdlSHA-1](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlSHA-1.md)
+[DpdlSHA-1](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/dpdlSHA-1.md)
 
 
 
