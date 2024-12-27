@@ -26,6 +26,14 @@ Therefore the apps listed here are considered to be small prototype applications
 
 [VIDEO of Dpdl3DMolecule app in action](https://youtu.be/82SRI_L3vLc)
 
+
+## DpdlSHA-1 - implementation of SHA-1 hash algorithm
+
+SHA-1 hash algorithm implementation entirely written in Dpdl
+
+[DpdlSHA-1](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/dpdlSHA-1.md)
+
+
 ## DpdlWebsBrowseApp - an embedded Web-server with a web-browser UI
 
 [DpdlWebsBrowseApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlWebsBrowseApp.md)
@@ -84,13 +92,6 @@ Dpdl sample application that creates a simple UI to convert degree values from C
 Performs LLM training in 40 steps to generate a GTP-2 model (124 Mb) from a data source that consists of 'tinystories' and 'tinyshakespeare' which are avaialbe as already tokenized datasets.
 
 [DpdlTrainLLM](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlTrainLLM.md)
-
-
-## DpdlSHA-1 - implementation of SHA-1 hash algorithm
-
-SHA-1 hash algorithm implementation entirely written in Dpdl
-
-[DpdlSHA-1](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/dpdlSHA-1.md)
 
 
 
