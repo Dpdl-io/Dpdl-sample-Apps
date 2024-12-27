@@ -86,6 +86,14 @@ Performs LLM training in 40 steps to generate a GTP-2 model (124 Mb) from a data
 [DpdlTrainLLM](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlTrainLLM.md)
 
 
+## DpdlSHA-1 - implementation of SHA-1 hash algorithm
+
+SHA-1 hash algorithm implementation entirely written in Dpdl
+
+[DpdlSHA-1](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlSHA-1.md)
+
+
+
 # some <ins>old</ins> projects developed using Dpdl
 
 ## Dynamic Skiing Location System (DSLS) - developed in year 2006
