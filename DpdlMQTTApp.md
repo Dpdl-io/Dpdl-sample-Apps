@@ -66,40 +66,40 @@ mosquitto_sub -v -h 127.0.0.1 -p 1883 -t 'a/#' -t 'dpdl/+/test'
 This diagram illustrates the architecture of an embedded MQTT application, broken down into several components and their interactions. Here's a detailed explanation:
 Main Components
 
-    dpdIMqttapp (start.h)
-        This is the main application or starting point for the MQTT client/server.
-        It contains two threads:
-            dpdIMqttServer.h: Handles the server side of the MQTT communication.
-            dpdIMqttClient.h: Manages the client-side operations.
+dpdIMqttapp (start.h)
+This is the main application or starting point for the MQTT client/server.
+It contains two threads:
+- dpdIMqttServer.h: Handles the server side of the MQTT communication.
+- dpdIMqttClient.h: Manages the client-side operations.
 
-    dpdIMqttServer.h
-        Implements an embedded MQTT server.
-        Contains embedded C code (>>c) to handle server functionalities.
-        Interacts with the dpdIMqttClient.h through a connection interface.
+dpdIMqttServer.h
+Implements an embedded MQTT server.
+Contains embedded C code (>>c) to handle server functionalities.
+Interacts with the dpdIMqttClient.h through a connection interface.
 
-    dpdIMqttClient.h
-        Implements an embedded MQTT client.
-        Also contains embedded C code (>>c) to manage client operations.
-        Communicates back to dpdIMqttapp via another connection interface.
+dpdIMqttClient.h
+Implements an embedded MQTT client.
+Also contains embedded C code (>>c) to manage client operations.
+Communicates back to dpdIMqttapp via another connection interface.
 
-    dpdIMqttUI.h
-        Displays messages received from the MQTT server.
-        Uses Java Swing classes (Java JRE Classes) like JList and JTextArea.
-        Sends messages to the MQTT topic using the dpdIMqttServer.h.
+dpdIMqttUI.h
+Displays messages received from the MQTT server.
+Uses Java Swing classes (Java JRE Classes) like JList and JTextArea.
+Sends messages to the MQTT topic using the dpdIMqttServer.h.
 
-    dpdIMqttClient.h
-        Sends messages to the MQTT topic managed by the server.
+dpdIMqttClient.h
+Sends messages to the MQTT topic managed by the server.
 
-    dpdIMqttStack
-        Represents the underlying MQTT protocol stack used in both the client and server implementations.
+dpdIMqttStack
+Represents the underlying MQTT protocol stack used in both the client and server implementations.
 
 #### Data Flow and Interaction
 
-    The dpdIMqttapp starts two threads: one for the server (dpdIMqttServer.h) and one for the client (dpdIMqttClient.h).
-    Both threads use embedded C code (>>c) to perform their respective functions.
-    These threads interact over a connection interface defined by dpdIMqttStack.
-    The UI (dpdIMqttUI.h) receives messages from the server and sends messages to the MQTT topic via the server thread.
-    The MQTT server (dpdIMqttServer.h) and client (dpdIMqttClient.h) communicate directly through this connection interface facilitated by the dpdIMqttStack.
+The dpdIMqttapp starts two threads: one for the server (dpdIMqttServer.h) and one for the client (dpdIMqttClient.h).
+Both threads use embedded C code (>>c) to perform their respective functions.
+These threads interact over a connection interface defined by dpdIMqttStack.
+The UI (dpdIMqttUI.h) receives messages from the server and sends messages to the MQTT topic via the server thread.
+The MQTT server (dpdIMqttServer.h) and client (dpdIMqttClient.h) communicate directly through this connection interface facilitated by the dpdIMqttStack.
 
 
 #### Summary
