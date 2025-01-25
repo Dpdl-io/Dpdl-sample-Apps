@@ -161,7 +161,7 @@ println("converting hash to hex...")
 
 println("SHA-1 hash: " + toHexStr(H))
 
-# to highlight the Dpdl features, we print the same hex string also via embedded java code
+# to highlight the powerful Dpdl features, we print the same hex string also via embedded java code
 
 dpdl_stack_push(H)
 >>java
