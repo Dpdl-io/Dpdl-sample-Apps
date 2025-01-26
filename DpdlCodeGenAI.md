@@ -10,7 +10,7 @@
 
 This Dpdl example makes use of the **Dpdl language plugin** '[DpdlAINerd (DAN)](https://github.com/Dpdl-io/DpdlEngine/blob/main/doc/DpdlAINerd.md)' to <ins>**automatically generate**</ins> and execute AI generated code  starting from a natural language description contained inside the Dpdl code.
 
-The auto generated application in this case is a simple version of the popular SNAKE Game, written in C and running in the console.
+The auto generated application in this case is a simple version of the popular <ins>**SNAKE Game**</ins>, written in C and running in the console.
 
 When the Dpdl code is executed, the C code is <ins>automatically generated</ins>, <ins>compiled</ins> in memory at runtime and <ins>executed</ins> right away.
 
