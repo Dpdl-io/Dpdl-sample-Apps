@@ -8,7 +8,7 @@
 
 ## DpdlCodeGenAI - generating and executing AI generative code (example: a simple console SNAKE Game)
 
-This Dpdl example makes use of the **Dpdl language plugin** '<em>[DpdlAINerd](https://github.com/Dpdl-io/DpdlEngine/blob/main/doc/DpdlAINerd.md)</em>' to <ins>**automatically generate**</ins> and execute AI generated code  starting from a natural language description contained inside the Dpdl code.
+This Dpdl example makes use of the **Dpdl language plugin** '[DpdlAINerd](https://github.com/Dpdl-io/DpdlEngine/blob/main/doc/DpdlAINerd.md)' to <ins>**automatically generate**</ins> and execute AI generated code  starting from a natural language description contained inside the Dpdl code.
 
 The auto generated application in this case is a simple version of the popular SNAKE Game, written in C and running in the console.
 
