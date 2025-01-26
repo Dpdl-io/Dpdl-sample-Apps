@@ -12,6 +12,8 @@ This Dpdl example makes use of the **Dpdl language plugin** '<em>DpdlAINerd</em>
 
 The auto generated application in this case is a simple version of the popular SNAKE Game, written in C and running in the console.
 
+**Dpdl code:**
+
 ```python
 println("testing 'DpdlAINerd' Dpdl language plugin to automatically generate and execute code...")
 
