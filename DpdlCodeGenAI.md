@@ -6,7 +6,7 @@
 
 
 
-## DpdlCodeGenAI - generating and executing AI generative code (example: console SNAKE Game)
+## DpdlCodeGenAI - generating and executing AI generative code (example: a simple console SNAKE Game)
 
 This Dpdl example makes use of the **Dpdl language plugin** '<em>DpdlAINerd</em>' to <ins>**automatically generate**</ins> and execute AI generated code  starting from a natural language description contained inside the Dpdl code.
 
@@ -38,7 +38,9 @@ The AI engine used by 'DpdlAINerd' was in this case the 'DeepSeek' model (also O
 
 <img src="https://www.dpdl.io/images/platform/examples/dpdlcodegenai/dpdlcodegenai_game_snake.png" width="65%" height="65%">
 
-[VIDEO of generated Game app in action](https://youtu.be/82SRI_L3vLc)
+The snake direction can be controlled via the arrow keys and grows in size each time the 'F' (food) is eaten
+
+
 
 
 
