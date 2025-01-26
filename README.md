@@ -55,6 +55,12 @@ This Dpdl application module provides two basic functions for encryption/decrypt
 
 [DpdlSimpleCryptApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlSimpleCryptApp.md)
 
+## DpdlCodeGenAI - generating and executing AI generative code (example: a simple console SNAKE Game)
+
+[DpdlCodeGenAI](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlCodeGenAI.md)
+
+<img src="https://www.dpdl.io/images/platform/examples/dpdlcodegenai/dpdlcodegenai_game_snake.png" width="65%" height="65%">
+
 ## DpdlCryptoTransactionApp - a simple application to create and sign Ethereum (ETH) transactions
 
 Simple Dpdl sample application that used the 'libethc' C library to create and sign transaction that can than be sumitted to the network
