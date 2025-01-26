@@ -48,7 +48,6 @@ SHA-1 hash algorithm implementation entirely written in Dpdl
 
 <img src="https://www.dpdl.io/images/platform/examples/dpdlmqttapp/DpdlMQTTApp_screen.png" width="55%" height="55%">
 
-
 ## DpdlSimpleCryptApp - a simple application module for AES-128 encryption/decryption of strings of data
 
 This Dpdl application module provides two basic functions for encryption/decryption of strings of data with AES-128 using the open source 'TinyCrypt' C library from Intel
@@ -56,6 +55,8 @@ This Dpdl application module provides two basic functions for encryption/decrypt
 [DpdlSimpleCryptApp](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlSimpleCryptApp.md)
 
 ## DpdlCodeGenAI - generating and executing AI generative code (example: a simple console SNAKE Game)
+
+A simple console SNAME Game automatically AI generated using the Dpdl languae plugin 'DpdlAINerd'
 
 [DpdlCodeGenAI](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlCodeGenAI.md)
 
