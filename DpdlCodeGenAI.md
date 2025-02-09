@@ -34,7 +34,7 @@ println("exit code: " + exit_code)
 println("finished")
 ```
 
-The code above generated automatically the following code: [ai/dpdlAISnakeGame_gen.h](https://github.com/Dpdl-io/DpdlEngine/blob/main/DpdlLibs/ai/dpdlAISnakeGame_gen.h)
+The code above generated automatically the following code, ready to run giving no errors: [ai/dpdlAISnakeGame_gen.h](https://github.com/Dpdl-io/DpdlEngine/blob/main/DpdlLibs/ai/dpdlAISnakeGame_gen.h)
 
 The AI engine used by 'DpdlAINerd' was in this case the '[DeepSeek](https://www.deepseek.com)' model, but also OpenAI is supported and can be eventually configured.
 
