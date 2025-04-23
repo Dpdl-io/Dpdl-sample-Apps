@@ -111,7 +111,7 @@ on a LLM model Llama-2 a simple story based on the content provided in the input
 ---
 ----------------------------------------------------------------------------------------------------
 
-# here some <ins>OLD</ins> projects developed using Dpdl
+## here some <ins>OLD</ins> projects developed using Dpdl
 
 ## Dynamic Skiing Location System (DSLS) - developed in year 2006
 
