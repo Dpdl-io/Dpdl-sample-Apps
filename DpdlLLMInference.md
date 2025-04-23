@@ -17,4 +17,4 @@ The Dpdl code makes use of embedded C code 'llama2.c' to perform the actual infe
 The model used in this example is 'TinyStories': https://huggingface.co/datasets/roneneldan/TinyStories
 
 **Dpdl source code:**
-[app/dpdlLLMInference/dpdlLLMInfer.h]((https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/app/dpdlLLMInference/dpdlLLMInfer.h)
+[app/dpdlLLMInference/dpdlLLMInfer.h](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/app/dpdlLLMInference/dpdlLLMInfer.h)
