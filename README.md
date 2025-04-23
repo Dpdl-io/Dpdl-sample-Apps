@@ -100,7 +100,16 @@ Performs LLM training in 40 steps to generate a GTP-2 model (124 Mb) from a data
 
 [DpdlTrainLLM](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlTrainLLM.md)
 
+## DpdlLLMInference - sample console app that performs inference on Llama-2 LLM models via embedded C code
 
+Dpdl sample console application that allows to input a prompt about a story to be written, it will than generate by inference
+on a LLM model Llama-2 a simple story based on the content provided in the input prompt
+
+[DpdlLLMInference](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlLLMInference.md)
+
+
+---
+----------------------------------------------------------------------------------------------------
 
 # here some <ins>OLD</ins> projects developed using Dpdl
 
