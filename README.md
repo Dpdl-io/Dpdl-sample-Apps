@@ -56,7 +56,7 @@ This Dpdl application module provides two basic functions for encryption/decrypt
 
 ## DpdlCodeGenAI - generating and executing AI generative code (example: a simple console SNAKE Game)
 
-A simple console SNAME Game automatically AI generated using the Dpdl languae plugin 'DpdlAINerd'
+A simple console SNAME Game automatically AI generated using the Dpdl language plugin 'DpdlAINerd' which is than executed right away on the 'DpdlEngine'
 
 [DpdlCodeGenAI](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlCodeGenAI.md)
 
