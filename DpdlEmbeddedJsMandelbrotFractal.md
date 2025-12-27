@@ -6,7 +6,7 @@
 
 
 
-## DpdlEmbeddedJsMandelbrotFractal - Dpdl sample console app that renders a Mandelbrot Fractal
+## DpdlEmbeddedJsMandelbrotFractal - sample console app that renders a Mandelbrot Fractal
 
 Dpdl example code that renders a Mandelbrot Fractal within the console via an 'embedded code section' in JavaScript.
 
