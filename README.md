@@ -107,8 +107,17 @@ on a LLM model Llama-2 a simple story based on the content provided in the input
 
 [DpdlLLMInference](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlLLMInference.md)
 
+## DpdlEmbeddedJsMandelbrotFractal - sample console app that renders a Mandelbrot Fractal
 
----
+Dpdl example code that renders a Mandelbrot Fractal within the console via an 'embedded code section' in JavaScript.
+
+[DpdlEmbeddedJsMandelbrotFractal.md](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlEmbeddedJsMandelbrotFractal.md)
+
+<img src="https://www.dpdl.io/images/platform/examples/Dpdl_example_embedded_mjs_mandebrot_fractal.png" width="40%" height="40%">
+
+
+
+Some very old....
 ----------------------------------------------------------------------------------------------------
 
 ## here some <ins>OLD</ins> projects developed using Dpdl
