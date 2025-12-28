@@ -113,7 +113,7 @@ Dpdl example code that renders a Mandelbrot Fractal within the console via an 'e
 
 [DpdlEmbeddedJsMandelbrotFractal.md](https://github.com/Dpdl-io/Dpdl-sample-Apps/blob/main/DpdlEmbeddedJsMandelbrotFractal.md)
 
-<img src="https://www.dpdl.io/images/platform/examples/Dpdl_example_embedded_mjs_mandebrot_fractal.png" width="80%" height="80%">
+<img src="https://www.dpdl.io/images/platform/examples/Dpdl_example_embedded_mjs_mandebrot_fractal.png" width="65%" height="65%">
 
 
 
