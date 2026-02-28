@@ -1,7 +1,7 @@
 # Dpdl3DMolecule
 
 <p align="center">
-	<img src="https://www.dpdl.io/images/dpdl-io_blue.png" width="40%">
+	<img src="https://www.dpdl.io/images/dpdl-io_blue.png" width="30%">
 </p>
 
 				www.dpdl.io
