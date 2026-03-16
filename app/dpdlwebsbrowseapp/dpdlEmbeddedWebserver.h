@@ -92,7 +92,7 @@ static void usage(const char *prog) {
 
 }
 
-int main(int argc, char **argv) {
+int dpdl_main(int argc, char **argv) {
   printf("starting the webserver...\n");
 
   char path[MG_PATH_MAX] = ".";
