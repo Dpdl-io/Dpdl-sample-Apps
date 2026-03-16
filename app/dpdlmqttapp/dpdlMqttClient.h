@@ -112,7 +112,7 @@ static void timer_fn(void *arg) {
 
 }
 
-int main(int argc, char *argv) {
+int dpdl_main(int argc, char *argv) {
   printf("MQTT Client init()\n");
 
   struct mg_mgr mgr;
