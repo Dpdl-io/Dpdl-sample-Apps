@@ -108,7 +108,7 @@ static void underflow_callback(struct SoundIoOutStream *outstream) {
     fprintf(stderr, "underflow %d\n", count++);
 }
 
-int main(int argc, char **argv) {
+int dpdl_main(int argc, char **argv) {
     char *exe = argv[0];
     enum SoundIoBackend backend = SoundIoBackendNone;
     char *device_id = NULL;
