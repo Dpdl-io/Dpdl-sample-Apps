@@ -147,7 +147,7 @@ static void fn(struct mg_connection *c, int ev, void *ev_data) {
   }
 }
 
-int main(int argc, char **argv){
+int dpdl_main(int argc, char **argv){
   printf("MQTT Server init()\n");
 
   struct mg_mgr mgr;
