@@ -124,7 +124,7 @@ Some very old....
 
 ## here some <ins>OLD</ins> projects developed using Dpdl
 
-## Dynamic Skiing Location System (DSLS) - developed in year 2006
+## Dynamic Skiing Location System (DSLS) - developed in year 2004 - 2006
 
 This mobile phone application have been developed by SEE Solutions in 2006, and was the sucessor of an earlier prototype application named MSLS (Mobile Skiiing Location System) developed in 2003.
 
